@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 import requests,json,os
 
 # server酱开关，填off不开启(默认)，填on同时开启cookie失效通知和签到成功通知
