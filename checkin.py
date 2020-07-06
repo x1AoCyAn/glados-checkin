@@ -3,10 +3,12 @@
 import requests,json,os
 
 # server酱开关，填off不开启(默认)，填on同时开启cookie失效通知和签到成功通知
-sever = 'on'
+sever = os.environ["SERVE"]
 # 填写server酱sckey,不开启server酱则不用填
-sckey = 'SCU104607T640b5c34020361870ddf16d2f813df265f0329a22511c'
-cookie = '__cfduid=d759102f672690cf8527fea8014437b5c1593932142; _ga=GA1.2.1312965143.1593932149; _gid=GA1.2.848935626.1594042977; koa:sess=eyJ1c2VySWQiOjQyNjgzLCJfZXhwaXJlIjoxNjE5OTYyOTkwNDA4LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=; koa:sess.sig=beDUK17Rp_VjRKYkIsQ0SfhUqfE'
+sckey = os.environ["SCKEY"]
+#'SCU89402Tf98b7f01ca3394b9ce9aa5e2ed1abbae5e6ca42796bb9'
+# 填入glados账号对应cookie
+cookie = os.environ["COOKIE"]
 
 
 def start():
