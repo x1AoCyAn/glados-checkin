@@ -6,7 +6,6 @@ sever = os.environ["SERVE"]
 sckey = os.environ["SCKEY"]
 cookie = os.environ["COOKIE"]
 
-
 def start():
     
     url= "https://glados.rocks/api/user/checkin"
